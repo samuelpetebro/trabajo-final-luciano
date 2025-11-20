@@ -1,0 +1,170 @@
+/* ==== RESET ==== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    background: #f1f1f1;
+    color: #222;
+    line-height: 1.6;
+  }
+  
+  /* ==== HEADER ==== */
+  .site-header {
+    background: #0d47a1;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 4px solid #08306b;
+  }
+  
+  .site-header .logo {
+    width: 90px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .site-header h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+  }
+  
+  .site-header .sub {
+    font-size: 1rem;
+    opacity: 0.9;
+  }
+  
+  /* ==== NAV ==== */
+  .toc {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: #08306b;
+    padding: 10px 0;
+  }
+  
+  .toc a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: 0.3s;
+  }
+  
+  .toc a:hover {
+    background: #0d47a1;
+  }
+  
+  /* ==== CONTENEDOR PRINCIPAL ==== */
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+  }
+  
+  /* ==== TARJETAS === */
+  .card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    border: 1px solid #ddd;
+  }
+  
+  .card h2 {
+    margin-bottom: 15px;
+    color: #0d47a1;
+    border-bottom: 2px solid #0d47a1;
+    padding-bottom: 5px;
+  }
+  
+  .card h3 {
+    margin-top: 20px;
+    color: #08306b;
+  }
+  
+  /* ==== TABLAS ==== */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  table thead {
+    background: #0d47a1;
+    color: white;
+  }
+  
+  table th,
+  table td {
+    padding: 10px;
+    border: 1px solid #bbb;
+    text-align: left;
+  }
+  
+  table tr:nth-child(even) {
+    background: #f5f5f5;
+  }
+  
+  .destacado {
+    background: #e3f2fd !important;
+    font-weight: bold;
+  }
+  
+  /* ==== BOTONES ==== */
+  .btn {
+    display: inline-block;
+    background: #0d47a1;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background: #08306b;
+  }
+  
+  /* ==== LISTAS ==== */
+  ol li, ul li {
+    margin-bottom: 12px;
+  }
+  
+  /* ==== MAPA CONCEPTUAL ==== */
+  .mapa-img {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 3px 14px rgba(0,0,0,0.25);
+    border: 2px solid #0d47a1;
+  }
+  
+  /* ==== RESPONSIVE ==== */
+  @media (max-width: 768px) {
+    .toc {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  
+    .site-header h1 {
+      font-size: 1.8rem;
+    }
+  
+    .card {
+      padding: 18px;
+    }
+  
+    table th,
+    table td {
+      font-size: 0.85rem;
+    }
+  }
+  
